@@ -15,7 +15,7 @@ import {
 import "./App.css";
 import Auth from "./Auth";
 
-const API_URL = "http://localhost:5000/api/applications";
+const API_URL = "https://jobtrack-pxfd.onrender.com/api/applications";
 
 const statusColors = {
   Applied: "blue",
@@ -133,17 +133,20 @@ function App() {
       setProfileLoading(true);
       setProfileMessage("");
 
-      const response = await fetch("http://localhost:5000/api/auth/profile", {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
+      const response = await fetch(
+        "https://jobtrack-pxfd.onrender.com/api/auth/profile",
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            name: profileName.trim(),
+            email: profileEmail.trim(),
+          }),
         },
-        body: JSON.stringify({
-          name: profileName.trim(),
-          email: profileEmail.trim(),
-        }),
-      });
+      );
 
       const data = await response.json();
 
@@ -185,7 +188,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/change-password",
+        "https://jobtrack-pxfd.onrender.com/api/auth/change-password",
         {
           method: "PUT",
           headers: {
