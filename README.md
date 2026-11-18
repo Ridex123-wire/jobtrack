@@ -1,5 +1,7 @@
 # JobTrack – Job Application Tracker
 
+🚀 **Live Demo:** https://jobtrack-ridwan.vercel.app/
+
 JobTrack is a full-stack job application tracking platform designed to help job seekers organize their applications, monitor progress, and manage their job search from one dashboard.
 
 ## Features
@@ -10,8 +12,8 @@ JobTrack is a full-stack job application tracking platform designed to help job 
 - **Search and Filtering:** Search applications and filter them by status.
 - **Analytics:** Visualize application progress with charts.
 - **Upcoming Interviews:** Keep track of scheduled interviews.
-- **Profile Management:** Update your personal information.
-- **Password Management:** Change your account password securely.
+- **Profile Management:** Update personal information.
+- **Password Management:** Change account passwords securely.
 - **Theme Support:** Switch between light and dark modes.
 - **Data Persistence:** Store application data in MongoDB.
 - **Responsive Design:** Works across desktop and mobile screens.
@@ -19,7 +21,6 @@ JobTrack is a full-stack job application tracking platform designed to help job 
 ## Tech Stack
 
 ### Frontend
-
 - React
 - Vite
 - JavaScript
@@ -27,13 +28,18 @@ JobTrack is a full-stack job application tracking platform designed to help job 
 - Recharts
 
 ### Backend
-
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
 - JSON Web Tokens (JWT)
 - bcryptjs
+
+## Live Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Database:** MongoDB Atlas
 
 ## Project Structure
 
@@ -53,14 +59,14 @@ jobtrack/
 └── README.md
 ```
 
-_The folder structure above is a simplified overview._
+*The folder structure above is a simplified overview.*
 
 ## Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Ridex123-wire/jobtrack.git
 ```
 
 ### 2. Open the project
@@ -94,7 +100,7 @@ Create a `.env` file inside the backend folder:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
@@ -114,13 +120,14 @@ Building JobTrack helped me improve my skills in:
 - Creating data visualizations.
 - Building responsive user interfaces.
 - Handling user profiles and password updates.
+- Deploying frontend and backend applications.
 
 ## Future Improvements
 
 - Email notifications for interviews.
 - Job application reminders.
 - More detailed analytics.
-- Deployment of the full application.
+- Additional dashboard features.
 
 ## Author
 
@@ -128,7 +135,7 @@ Building JobTrack helped me improve my skills in:
 
 Frontend Developer | Growing Full-Stack Developer
 
-GitHub: [Ridex123-wire](https://github.com/Ridex123-wire)
+GitHub: https://github.com/Ridex123-wire
 
 Portfolio: Add your live Devora portfolio URL here.
 
